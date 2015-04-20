@@ -1,0 +1,55 @@
+
+.navbar-brand {
+  float: left;
+  height: 75px;
+  padding-top: 8px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+body {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+#api_info
+{
+	width:80%;
+	margin: auto;
+}
+
+.container
+{
+	width:80%;
+	margin: auto;
+}
+
+.navbar-inverse { 
+	background-color: #36445F;
+}
+
+body > nav > div > div.navbar-header > a > img, #navbar > form
+{
+	padding-top: 10px;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+
+}
+.navbar-toggle{
+	margin-top: 20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:hover{
+	background-color: red;
+}
+
+
+
+
+
+@media all and (max-width : 600px) {
+
+
+}

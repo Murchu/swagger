@@ -123,7 +123,7 @@
 .swagger-section .swagger-ui-wrap {
   line-height: 1;
   font-family: "Droid Sans", sans-serif;
-  max-width: 960px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1158,8 +1158,8 @@
   cursor: pointer;
 }
 .swagger-section #header {
-  background-color: #89bf04;
-  padding: 14px;
+  background-color: #001414;
+  padding: 15px;
 }
 .swagger-section #header a#logo {
   font-size: 1.5em;
@@ -1189,17 +1189,12 @@
 .swagger-section #header form#api_selector .input a#explore {
   display: block;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 100;;
   padding: 6px 8px;
   font-size: 0.9em;
   color: white;
-  background-color: #547f00;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
+  background-color: #33CC33;
+
 }
 .swagger-section #header form#api_selector .input a#explore:hover {
   background-color: #547f00;
@@ -1217,5 +1212,17 @@
 .swagger-section #message-bar {
   min-height: 30px;
   text-align: center;
+  padding-top: 10px;
+}
+
+#show-wordnik-dev-icon{
+  width: 25px;
+}
+
+ #show-pet-store-icon{
+
+  width: 27px;
+ }
+#api_selector{
   padding-top: 10px;
 }

@@ -1,23 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Swagger UI</title>
-  <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'/>
-  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
-  <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
-  <link href='css/screen.css' media='print' rel='stylesheet' type='text/css'/>
-  <script type="text/javascript" src="lib/shred.bundle.js"></script>
-  <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
-  <script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
-  <script src='lib/jquery.wiggle.min.js' type='text/javascript'></script>
-  <script src='lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
-  <script src='lib/handlebars-1.0.0.js' type='text/javascript'></script>
-  <script src='lib/underscore-min.js' type='text/javascript'></script>
-  <script src='lib/backbone-min.js' type='text/javascript'></script>
-  <script src='lib/swagger.js' type='text/javascript'></script>
-  <script src='swagger-ui.js' type='text/javascript'></script>
-  <script src='lib/highlight.7.3.pack.js' type='text/javascript'></script>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Teamwork.com | API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/favicon.ico" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'/>
+        <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
+        <link href='css/reset.css' media='print' rel='stylesheet' type='text/css'/>
+        <link href='css/screen.css' media='print' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="css/main.css">
+      
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="lib/shred.bundle.js"></script>
+        <script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+        <script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
+        <script src='lib/jquery.wiggle.min.js' type='text/javascript'></script>
+        <script src='lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+        <script src='lib/handlebars-1.0.0.js' type='text/javascript'></script>
+        <script src='lib/underscore-min.js' type='text/javascript'></script>
+        <script src='lib/backbone-min.js' type='text/javascript'></script>
+        <script src='lib/swagger.js' type='text/javascript'></script>
+        <script src='js/swagger-ui.js' type='text/javascript'></script>
+        <script src='lib/highlight.7.3.pack.js' type='text/javascript'></script>
 
   <!-- enabling this will enable oauth2 implicit scope support -->
   <script src='lib/swagger-oauth.js' type='text/javascript'></script>
@@ -61,27 +74,53 @@
     window.swaggerUi.load();
   });
   </script>
-</head>
+    </head>
+    <body class="swagger-section">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#"><img  class="logo" src="img/TWDEV.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
 
-<body class="swagger-section">
-<div id='header'>
-  <div class="swagger-ui-wrap">
-    <a id="logo" href="http://swagger.wordnik.com">swagger</a>
-    <form id='api_selector'>
-      <div class='input icon-btn'>
-        <img id="show-pet-store-icon" src="images/pet_store_api.png" title="Show Swagger Petstore Example Apis">
-      </div>
-      <div class='input icon-btn'>
-        <img id="show-wordnik-dev-icon" src="images/wordnik_api.png" title="Show Wordnik Developer Apis">
-      </div>
-      <div class='input'><input placeholder="http://example.com/api" id="input_baseUrl" name="baseUrl" type="text"/></div>
-      <div class='input'><input placeholder="api_key" id="input_apiKey" name="apiKey" type="text"/></div>
-      <div class='input'><a id="explore" href="#">Explore</a></div>
-    </form>
-  </div>
-</div>
+            <div class="form-group ">
+                <input class="form-control" type="text" id="input_baseUrl" name="baseUrl" placeholder="http://example.com/api" />
+            </div>
+            <button type="submit" class="btn btn-success">Explore</button>
+          </form>
+        </div><!--/.navbar-collapse       </div>-->
 
-<div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
-<div id="swagger-ui-container" class="swagger-ui-wrap"></div>
-</body>
+    </nav>
+
+    <div id="swagger-ui-container" class="swagger-ui-wrap">      
+      <!-- stuff -->
+    </div>
+  
+
+    <div class="container">
+    
+      <hr>
+
+      <footer>
+        <p>&copy; Teamwork.com 2015</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+
+    </body>
 </html>

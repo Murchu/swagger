@@ -286,16 +286,16 @@
   width: 500px !important;
 }
 .swagger-section .swagger-ui-wrap .info_license {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .swagger-section .swagger-ui-wrap .info_tos {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .swagger-section .swagger-ui-wrap .message-fail {
   color: #cc0000;
 }
 .swagger-section .swagger-ui-wrap .info_contact {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .swagger-section .swagger-ui-wrap .info_description {
   padding-bottom: 10px;
@@ -473,7 +473,7 @@
   font-family: "Anonymous Pro", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 .swagger-section .swagger-ui-wrap form.formtastic fieldset.inputs ol li.text textarea {
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'Bree Serif', serif;
   height: 250px;
   padding: 4px;
   display: block;
@@ -625,7 +625,6 @@
   clear: none;
   float: left;
   font-family: "Droid Sans", sans-serif;
-  font-weight: bold;
 }
 .swagger-section .swagger-ui-wrap ul#resources li.resource div.heading h2 a {
   color: #999999;
@@ -1225,4 +1224,9 @@
  }
 #api_selector{
   padding-top: 10px;
+}
+
+.form-group, #navbar > form > button, footer{
+  font-family: "Droid Sans", sans-serif;
+  font-size: 0.9em;
 }
